@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <TextArea fx:id="textArea"  GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <opaqueInsets>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </opaqueInsets>
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin></TextArea>
+
+   <GridPane alignment="CENTER" hgap="21.0" vgap="21.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+      <Button fx:id="backbtn" minHeight="0.0" minWidth="0.0" onAction="#onClickBtnUndo" prefHeight="50" prefWidth="50" text="undo" GridPane.columnIndex="3" GridPane.rowIndex="0">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+
+      <Button fx:id="btnC" minHeight="0.0" minWidth="0.0" onAction="#onClickBtnClear" prefHeight="50.0" prefWidth="50.0" text="C" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Button fx:id="btnBrckt" minHeight="0.0" onAction="#onClickBtnBrckt" prefHeight="50.0" prefWidth="50.0" text="( )" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="btnDgr" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="^" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="btnDel" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+      <Button fx:id="btn7" minHeight="0.0" minWidth="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Button fx:id="btn8" minHeight="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="btn9" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="btnX" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+      <Button fx:id="btn4" minHeight="0.0" minWidth="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="4" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <Button fx:id="btn5" minHeight="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="btn6" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="btnMns" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+      <Button fx:id="btn1" minHeight="0.0" minWidth="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <Button fx:id="btn2" minHeight="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="btn3" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button fx:id="btnPls" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+      <Button fx:id="btnZn" disable="true" minHeight="0.0" minWidth="0.0" onAction="#onClickBtnZn" prefHeight="50.0" prefWidth="50.0" text="" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      <Button fx:id="btn0" minHeight="0.0" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="btnPnt" onAction="#onClickBtn" prefHeight="50.0" prefWidth="50.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="btnRslt" onAction="#onClickBtnResult" prefHeight="50.0" prefWidth="50.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+
+   </GridPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+  
+</GridPane>
